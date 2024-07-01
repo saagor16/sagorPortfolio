@@ -28,7 +28,7 @@ const Portfolio = () => {
   return (
     <section className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen" id="projects" name="portfolio">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <h2 className="section__title text-4xl font-bold text-center pb-2">Projects</h2>
+        <h2 className="section__title text-4xl font-bold text-center pb-2 ">Projects</h2>
         <span className="text-lg text-center block mt-2 mb-8">All of my projects</span>
         <div className="projects__container container grid lg:grid-cols-2 gap-8 mx-auto px-4 sm:px-0">
           {projects.map((project, i) => (
@@ -46,7 +46,6 @@ const Portfolio = () => {
                 <h3 className="projects__title text-xl font-semibold">{project.name}</h3>
                 <p className="projects__modal-description text-gray-400">{project.description}</p>
               </div>
-
               {modal === i && (
                 <div ref={modalRef} className="projects__modal active__modal fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
                   <div className="projects__modal-content bg-white text-black rounded-lg p-6 relative">

@@ -1,4 +1,3 @@
-
 const Contact = () => {
   return (
     <div
@@ -7,7 +6,7 @@ const Contact = () => {
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8 text-center">
-          <p className="text-4xl font-bold inline ">
+          <p className="text-4xl font-bold inline">
             Contact
           </p>
           <p className="py-6">Submit the form below to get in touch with me</p>
@@ -15,7 +14,6 @@ const Contact = () => {
 
         <div className="flex justify-center items-center">
           <form
-           
             className="flex flex-col w-full md:w-1/2"
           >
             <input
@@ -40,12 +38,14 @@ const Contact = () => {
               required
             ></textarea>
 
-            <button
-              type="submit"
-              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 transition-transform duration-300"
-            >
-              Lets talk
-            </button>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 px-8 py-3 my-8 rounded-md hover:scale-105 transition-transform duration-300"
+              >
+                Lets talk
+              </button>
+            </div>
           </form>
         </div>
       </div>

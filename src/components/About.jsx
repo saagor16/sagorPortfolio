@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -6,30 +7,46 @@ const About = () => {
       className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8 text-center">
-          <p className="text-4xl font-bold inline ">
+        <motion.div
+          className="pb-8 text-center"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
-        </div>
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
-        </p>
+        </motion.div>
+        <motion.p
+          className="text-xl mt-20"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Hello, I am Sagor, a Junior web developer. My proficiency in
+          developing personalized websites with JavaScript guarantees that your
+          distinct requirements are fulfilled. My goal is to create flawless
+          websites that match your ideal user interface design, pixel by pixel.
+          I am committed to making sure you are happy, so I will make as many
+          changes as necessary to get the results you want.
+        </motion.p>
 
         <br />
 
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
-        </p>
+        <motion.p
+          className="text-xl"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          You can rely on me to handle your web development needs with a
+          results-driven methodology, top-notch technical expertise, and
+          painstaking attention to detail. Comfortable in: HTML, CSS,
+          Javascript, Tailwind, React, Bootstrap Familiar with: Firebase,
+          MongoDB, Express, NodeJS, Material UI, NextJS Tools I use: VS Code,
+          Github, Netlify, Vercel, Surge, Figma Ping me with any queries or
+          anything. Thank You for visiting my profile. Stay blessed.
+        </motion.p>
       </div>
     </div>
   );
