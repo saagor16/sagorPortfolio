@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import campusHub from '../assets/portfolio/CampusHub.png';
 import volunteer from '../assets/portfolio/volunteer.png';
 import art from '../assets/portfolio/art.png';
+import real from '../assets/portfolio/real.png';
 
 const Portfolio = () => {
   const [modal, setModal] = useState(null);
@@ -38,6 +39,16 @@ const Portfolio = () => {
       githubLink: 'https://github.com/saagor16/B9A10-Cline-Side-Art-Cruft',
       liveLink: 'https://new-artcraft.netlify.app/',
       techs: ['React', 'JavaScript','MongoDB','Express.js','Daisy UI','Tailwind CSS'],
+      features: ['Responsive design', 'User Authentication','Private Routes'],
+    },
+    {
+      id: 4,
+      src: real,
+      name: 'RealResort',
+      description: 'The Real Estate Portal is a comprehensive web application designed for buying, selling, and renting real estate properties. It provides a seamless user experience with robust features for property seekers and owners alike.',
+      githubLink: 'https://github.com/saagor16/B9A9-real-estate',
+      liveLink: 'https://b9a8-real-estate.web.app/',
+      techs: ['React', 'JavaScript','Daisy UI','Tailwind CSS'],
       features: ['Responsive design', 'User Authentication','Private Routes'],
     },
      
