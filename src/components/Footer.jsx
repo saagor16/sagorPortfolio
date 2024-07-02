@@ -28,7 +28,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-black to-gray-800">
       <div className="container mx-auto py-8">
         <h1 className="text-white text-center font-signature  mb-8 text-3xl font-bold">Sagor</h1>
-        <ul className="flex justify-center space-x-6 mb-8">
+        <ul className="flex justify-center space-x-3 lg:space-x-6 mb-8">
         {links.map(({ id, link }) => (
           <li
             key={id}
