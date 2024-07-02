@@ -3,6 +3,7 @@ import { FaGithub, FaExternalLinkAlt, FaTimes, FaArrowRight } from 'react-icons/
 import { Link } from 'react-scroll';
 import campusHub from '../assets/portfolio/CampusHub.png';
 import volunteer from '../assets/portfolio/volunteer.png';
+import art from '../assets/portfolio/art.png';
 
 const Portfolio = () => {
   const [modal, setModal] = useState(null);
@@ -23,16 +24,24 @@ const Portfolio = () => {
       id: 2,
       src: volunteer,
       name: 'Happy Volunteer',
-      description: 'A comprehensive platform featuring student login and registration, meal management for admins, and a review system, all built with a modern tech stack including MongoDB, Express.js, React.js, and Node.js. Secure payments are facilitated through Stripe integration.',
+      description: 'This project is a volunteer management website designed to streamline volunteer activities using modern web technologies. It facilitates user authentication, activity tracking, and communication between volunteers and organizers. The site is built with a responsive design to ensure accessibility across devices',
       githubLink: 'https://github.com/saagor16/B9A11-Cline-Volunter',
       liveLink: 'https://b9a11-volun.web.app/',
       techs: ['React', 'JavaScript','MongoDB','Express.js','Daisy UI'],
       features: ['Responsive design', 'Document head management','Data management and storage facilitated','User authentication functionalities','Comprehensive volunteer management capabilities'],
     },
-    
-    
+    {
+      id: 3,
+      src: art,
+      name: 'CruftyCreation',
+      description: 'Art And Cruft is a web application designed to showcase and manage art and craft items. It provides a centralized platform for users to explore various craft collections and for creators to showcase their own crafts.',
+      githubLink: 'https://github.com/saagor16/B9A10-Cline-Side-Art-Cruft',
+      liveLink: 'https://new-artcraft.netlify.app/',
+      techs: ['React', 'JavaScript','MongoDB','Express.js','Daisy UI','Tailwind CSS'],
+      features: ['Responsive design', 'User Authentication','Private Routes'],
+    },
+     
   ];
-
   const handlerControlModal = (index) => {
     setModal(index);
   };
