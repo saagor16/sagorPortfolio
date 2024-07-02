@@ -15,16 +15,19 @@ const Footer = () => {
       id: 3,
       link: "portfolio",
     },
-    
     {
       id: 4,
+      link: "experience",
+    },
+    {
+      id: 5,
       link: "contact",
     },
   ];
   return (
     <footer className="bg-gradient-to-b from-black to-gray-800">
       <div className="container mx-auto py-8">
-        <h1 className="text-white text-center mb-8">Sagor</h1>
+        <h1 className="text-white text-center font-signature  mb-8 text-3xl font-bold">Sagor</h1>
         <ul className="flex justify-center space-x-6 mb-8">
         {links.map(({ id, link }) => (
           <li
