@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaTimes, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import campusHub from '../assets/portfolio/CampusHub.png';
+import volunteer from '../assets/portfolio/volunteer.png';
 
 const Portfolio = () => {
   const [modal, setModal] = useState(null);
@@ -17,6 +18,16 @@ const Portfolio = () => {
       liveLink: 'https://b9a12-campushub.web.app/',
       techs: ['React', 'JavaScript','MongoDB','Express.js'],
       features: ['Student Login and Registration', 'Meal Management for Admins','Review and Rating System','Stripe Integration for Payments'],
+    },
+    {
+      id: 2,
+      src: volunteer,
+      name: 'Happy Volunteer',
+      description: 'A comprehensive platform featuring student login and registration, meal management for admins, and a review system, all built with a modern tech stack including MongoDB, Express.js, React.js, and Node.js. Secure payments are facilitated through Stripe integration.',
+      githubLink: 'https://github.com/saagor16/B9A11-Cline-Volunter',
+      liveLink: 'https://b9a11-volun.web.app/',
+      techs: ['React', 'JavaScript','MongoDB','Express.js','Daisy UI'],
+      features: ['Responsive design', 'Document head management','Data management and storage facilitated','User authentication functionalities','Comprehensive volunteer management capabilities'],
     },
     
     
