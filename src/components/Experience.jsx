@@ -85,8 +85,8 @@ const Experience = () => {
               className={`shadow-md py-4 rounded-lg ${style}`}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            >
+              transition={{ duration: 5, delay: 0.5 }}
+              >
               {icon}
               <p className="mt-4 font-medium">{title}</p>
             </motion.div>
