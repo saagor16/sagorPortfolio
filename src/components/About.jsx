@@ -14,7 +14,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            <p className="text-4xl font-bold">
               About
             </p>
           </motion.div>
