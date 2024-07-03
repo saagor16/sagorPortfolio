@@ -19,6 +19,18 @@ const Home = () => {
       <div className="md:pt-40 pt-28">
         <div className="max-w-screen-lg mx-auto flex flex-col lg:flex-row items-center justify-center h-full px-4">
           <div className="flex flex-col justify-center h-full text-center items-center lg:text-start lg:items-start">
+           
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="text-gray-200 text-2xl md:text-5xl lg:text-7xl tracking-tight mb-4"
+            >
+              HEY, I AM <br />
+              <span className="text-purple-500">Sagor</span>
+            </motion.p>
             <TypeAnimation
               sequence={[
                 "Front-end Developer",
@@ -32,21 +44,8 @@ const Home = () => {
               repeat={Infinity}
               className="font-bold text-gray-400 text-xl md:text-3xl lg:text-5xl italic mb-4"
             />
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="text-gray-200 text-2xl md:text-5xl lg:text-7xl tracking-tight mb-4"
-            >
-              HEY, I AM <br />
-              <span className="text-purple-500">Sagor</span>
-            </motion.p>
             <p className="text-white text-base md:text-lg lg:text-xl">
-              Hello, I am Sagor, a Junior web developer. My proficiency in
-              developing personalized websites with JavaScript guarantees that
-              your distinct requirements are fulfilled.
+            I am passionate about learning and mastering React to achieve <br /> success in my field, despite having no professional experience. <br /> My goal is to contribute effectively to projects and grow as a proficient developer.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 mt-4">
