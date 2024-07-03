@@ -9,7 +9,7 @@ const About = () => {
       <div className="lg:pt-32 pt-10 mx-auto max-w-screen-lg">
         <div className="p-4">
           <motion.div
-            className=" text-center"
+            className="text-center"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -32,10 +32,8 @@ const About = () => {
             will make as many changes as necessary to get the results you want.
           </motion.p>
 
-          <br />
-
           <motion.p
-            className="text-lg sm:text-xl text-center"
+            className="text-lg sm:text-xl text-center mt-10"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}
@@ -48,6 +46,35 @@ const About = () => {
             Github, Netlify, Vercel, Surge, Figma Ping me with any queries or
             anything. Thank You for visiting my profile. Stay blessed.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="text-lg mt-16 bg-gray-700 p-6 rounded-lg shadow-lg"
+          >
+            <div className="text-center">
+              <p className="text-xl font-semibold border-b-2 border-gray-500 inline-block">
+                Education
+              </p>
+            </div>
+            <div className="mt-4 space-y-4">
+              <motion.div
+                className="p-4 bg-gray-800 rounded-lg shadow-lg"
+                whileHover={{ scale: 1.03 }}
+              >
+                <p className="font-bold">Higher Secondary Certificate (HSC)</p>
+                <p>Govt. Bangla College(GBC)</p>
+              </motion.div>
+              <motion.div
+                className="p-4 bg-gray-800 rounded-lg shadow-lg"
+                whileHover={{ scale: 1.03 }}
+              >
+                <p className="font-bold">Secondary School Certificate(SSC)</p>
+                <p>Islamee Adarsha High School(IAUB)</p>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
