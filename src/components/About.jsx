@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex items-center"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <motion.div
@@ -18,7 +18,7 @@ const About = () => {
           </p>
         </motion.div>
         <motion.p
-          className="text-xl mt-20"
+          className="text-lg sm:text-xl mt-10 sm:mt-20"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -34,7 +34,7 @@ const About = () => {
         <br />
 
         <motion.p
-          className="text-xl"
+          className="text-lg sm:text-xl"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 1 }}

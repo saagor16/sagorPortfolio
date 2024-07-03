@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="min-h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 flex items-center"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+      <div className="w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-4 ">
+        <div className="flex flex-col justify-center h-full mt-8 md:mt-0">
           <TypeAnimation
             sequence={[
               "Front-end Developer",
@@ -24,7 +24,7 @@ const Home = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-gray-400 text-xl lg:text-5xl md:text-3xl italic mb-4"
+            className="font-bold text-gray-400 text-lg sm:text-xl md:text-3xl lg:text-5xl italic mb-4"
           />
 
           <motion.p
@@ -32,13 +32,16 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-gray-200 md:text-7xl text-5xl tracking-tight mb-4"
+            className="text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-7xl tracking-tight mb-4"
           >
             HEY, I AM <br />
             <span className="text-purple-500">Sagor</span>
           </motion.p>
+          <p className="text-white text-base sm:text-lg md:text-xl mb-4">
+            Hello, I am Sagor, a Junior web developer. My proficiency in developing personalized websites with JavaScript guarantees that your distinct requirements are fulfilled.
+          </p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Link
               to="portfolio"
               smooth
@@ -65,11 +68,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
+        <div className="flex justify-center md:justify-end w-full mb-8 md:mb-0">
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-2xl w-2/3 sm:w-1/2 md:w-full"
           />
         </div>
       </div>

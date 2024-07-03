@@ -51,8 +51,8 @@ const Portfolio = () => {
       techs: ['React', 'JavaScript','Daisy UI','Tailwind CSS'],
       features: ['Responsive design', 'User Authentication','Private Routes'],
     },
-     
   ];
+
   const handlerControlModal = (index) => {
     setModal(index);
   };
@@ -66,7 +66,7 @@ const Portfolio = () => {
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <h2 className="text-4xl font-bold text-center pb-2">Projects</h2>
         <span className="text-lg text-center block mt-2 mb-8">All of my projects</span>
-        <div className="grid lg:grid-cols-2 gap-8 mx-auto px-4 sm:px-0">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mx-auto px-4 sm:px-0">
           {projects.map((project, i) => (
             <div key={i} className="shadow-md shadow-gray-600 rounded-lg p-6 bg-gray-900">
               <img
@@ -74,12 +74,12 @@ const Portfolio = () => {
                 alt={project.name}
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center mt-4">
+              <div className="flex flex-col md:flex-row items-center justify-center mt-4">
                 <a
                   href={project.githubLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center bg-gray-800 text-white rounded-md flex items-center justify-center gap-2"
+                  className="w-full md:w-1/2 px-6 py-3 m-2 md:m-4 duration-200 hover:scale-105 text-center bg-gray-800 text-white rounded-md flex items-center justify-center gap-2"
                 >
                   Code <FaGithub />
                 </a>
@@ -87,7 +87,7 @@ const Portfolio = () => {
                   href={project.liveLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center bg-gray-800 text-white rounded-md flex items-center justify-center gap-2"
+                  className="w-full md:w-1/2 px-6 py-3 m-2 md:m-4 duration-200 hover:scale-105 text-center bg-gray-800 text-white rounded-md flex items-center justify-center gap-2"
                 >
                   Demo <FaExternalLinkAlt />
                 </a>
@@ -99,9 +99,9 @@ const Portfolio = () => {
               {modal === i && (
                 <div
                   ref={modalRef}
-                  className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+                  className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4"
                 >
-                  <div className="bg-white text-black rounded-lg p-6 relative w-11/12 md:w-3/4 lg:w-1/2">
+                  <div className="bg-white text-black rounded-lg p-6 relative w-full md:w-3/4 lg:w-1/2">
                     <FaTimes
                       className="absolute top-2 right-2 text-xl cursor-pointer"
                       onClick={() => handlerControlModal(null)}
