@@ -3,7 +3,12 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { FaArrowCircleDown } from "react-icons/fa";
+import {
+  FaArrowCircleDown,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -40,7 +45,8 @@ const Home = () => {
             </motion.p>
             <p className="text-white text-base md:text-lg lg:text-xl">
               Hello, I am Sagor, a Junior web developer. My proficiency in
-              developing personalized websites with JavaScript guarantees that your distinct requirements are fulfilled.
+              developing personalized websites with JavaScript guarantees that
+              your distinct requirements are fulfilled.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 mt-4">
@@ -52,7 +58,10 @@ const Home = () => {
               >
                 Portfolio
                 <span className="group-hover:rotate-90 duration-300">
-                  <MdOutlineKeyboardArrowRight size={20} className="ml-1 md:size-25" />
+                  <MdOutlineKeyboardArrowRight
+                    size={20}
+                    className="ml-1 md:size-25"
+                  />
                 </span>
               </Link>
               <a
@@ -66,6 +75,32 @@ const Home = () => {
                 <span className="px-2">
                   <FaArrowCircleDown size={20} className="ml-1 md:size-25" />
                 </span>
+              </a>
+            </div>
+            <div className="flex lg:hidden justify-center space-x-5 mb-8 mt-3">
+              <a
+                href="https://github.com/saagor16"
+                className="bg-gray-900 text-white text-2xl p-2.5 rounded-md inline-flex hover:bg-gradient-to-r from-cyan-500 to-blue-500"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saagor/"
+                className="bg-gray-900 text-white text-2xl p-2.5 rounded-md inline-flex hover:bg-gradient-to-r from-cyan-500 to-blue-500"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61551216816741"
+                className="bg-gray-900 text-white text-2xl p-2.5 rounded-md inline-flex hover:bg-gradient-to-r from-cyan-500 to-blue-500"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebook />
               </a>
             </div>
           </div>
