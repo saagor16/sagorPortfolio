@@ -75,6 +75,14 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex flex-col md:flex-row items-center justify-center mt-4">
+              <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full md:w-1/2 px-6 py-3 m-2 md:m-4 duration-200 hover:scale-105 text-center bg-gray-800 text-white rounded-md flex items-center justify-center gap-2"
+                >
+                  Demo <FaExternalLinkAlt />
+                </a>
                 <a
                   href={project.githubLink}
                   target="_blank"
@@ -83,14 +91,7 @@ const Portfolio = () => {
                 >
                   Code <FaGithub />
                 </a>
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-full md:w-1/2 px-6 py-3 m-2 md:m-4 duration-200 hover:scale-105 text-center bg-gray-800 text-white rounded-md flex items-center justify-center gap-2"
-                >
-                  Demo <FaExternalLinkAlt />
-                </a>
+                
               </div>
               <div onClick={() => handlerControlModal(i)} className="cursor-pointer text-center mt-4">
                 <h3 className="text-xl font-semibold">{project.name}</h3>
