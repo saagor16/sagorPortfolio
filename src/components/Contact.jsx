@@ -18,30 +18,30 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <FaMapMarkerAlt className="text-cyan-500" />
-              <span>Location: Amtali, Barguna</span>
+              <span>Location: Mirpur-2, Dhaka</span>
             </div>
 
             <div className="flex items-center space-x-2">
               <FaRegAddressCard className="text-cyan-500" />
-              <span>Postal Code: 1234 Postal St, City, Country</span>
+              <span>Postal Code: 1216 , Dhaka, Bangladesh</span>
             </div>
             <div className="flex items-center space-x-2">
               <a
-                href="tel:+880123456789"
+                href="tel:+8801644984896"
                 className="flex items-center space-x-2 bg-gray-800 border border-gray-700 p-2 rounded-md hover:border-cyan-500 transition-colors duration-300"
               >
                 <FaPhone className="text-cyan-500" />
-                <span>Phone: +880 123-456-789</span>
+                <span>Phone: +880 1644984896</span>
               </a>
             </div>
 
             <div className="flex items-center space-x-2">
               <a
-                href="mailto:email@example.com"
+                href="mailto:saagor.16@gmail.com"
                 className="flex items-center space-x-2 bg-gray-800 border border-gray-700 p-2 rounded-md hover:border-cyan-500 transition-colors duration-300"
               >
                 <FaEnvelope className="text-cyan-500" />
-                <span>Email: email@example.com</span>
+                <span>Email:saagor.16@gmail.com</span>
               </a>
             </div>
           </div>
