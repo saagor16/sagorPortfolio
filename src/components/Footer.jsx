@@ -11,14 +11,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-black to-gray-800">
-      <div className="container mx-auto py-8 px-4">
+    <footer className="bg-gradient-to-b from-black to-gray-800 py-8">
+      <div className="container mx-auto px-4">
         <h1 className="text-white text-center font-signature mb-8 text-3xl font-bold">Sagor</h1>
         <ul className="flex flex-wrap justify-center space-x-3 lg:space-x-6 mb-8">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="lg:px-10 md:px-5 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 relative inline-block pb-1 group hover:text-white"
+              className="px-4 md:px-5 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 relative inline-block pb-1 group hover:text-white"
             >
               <Link to={link} smooth duration={500}>
                 {link}
@@ -27,7 +27,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className="flex justify-center space-x-5">
+        <div className="flex justify-center lg:space-x-5 mb-8">
           <a
             href="https://github.com/saagor16"
             className="bg-gray-900 text-white text-2xl p-2.5 rounded-md inline-flex hover:bg-gray-700"
@@ -61,8 +61,8 @@ const Footer = () => {
             <FaFacebook />
           </a>
         </div>
-        <span className="block mt-10 text-gray-400 text-center text-sm">
-          Copyright © 2023. All rights are reserved
+        <span className="block text-center text-sm text-gray-400">
+          Copyright © 2023. All rights reserved.
         </span>
       </div>
     </footer>

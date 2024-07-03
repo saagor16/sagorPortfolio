@@ -63,7 +63,7 @@ const Portfolio = () => {
       id="projects"
       name="portfolio"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="lg:pt-32 pt-10  max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <h2 className="text-4xl font-bold text-center pb-2">Projects</h2>
         <span className="text-lg text-center block mt-2 mb-8">All of my projects</span>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mx-auto px-4 sm:px-0">
