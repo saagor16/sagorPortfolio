@@ -33,11 +33,11 @@ const Home = () => {
             </motion.p>
             <TypeAnimation
               sequence={[
-                "Front-end Developer",
+                "Frontend Developer",
                 1000,
-                "Web Developer",
+                "Backend Developer",
                 1000,
-                "React Developer",
+                "Creative Freelancer",
                 1000,
               ]}
               speed={50}

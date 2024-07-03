@@ -24,7 +24,7 @@ const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Hello, I am Sagor, a Junior web developer. My proficiency in
+            Hello, I am Sagor, a  web developer. My proficiency in
             developing personalized websites with JavaScript guarantees that
             your distinct requirements are fulfilled. My goal is to create
             flawless websites that match your ideal user interface design,
@@ -59,6 +59,13 @@ const About = () => {
               </p>
             </div>
             <div className="mt-4 space-y-4">
+            <motion.div
+                className="p-4 bg-gray-800 rounded-lg shadow-lg"
+                whileHover={{ scale: 1.03 }}
+              >
+                <p className="font-bold">Secondary School Certificate(SSC)</p>
+                <p>Islamee Adarsha High School(IAUB)</p>
+              </motion.div>
               <motion.div
                 className="p-4 bg-gray-800 rounded-lg shadow-lg"
                 whileHover={{ scale: 1.03 }}
@@ -66,13 +73,7 @@ const About = () => {
                 <p className="font-bold">Higher Secondary Certificate (HSC)</p>
                 <p>Govt. Bangla College(GBC)</p>
               </motion.div>
-              <motion.div
-                className="p-4 bg-gray-800 rounded-lg shadow-lg"
-                whileHover={{ scale: 1.03 }}
-              >
-                <p className="font-bold">Secondary School Certificate(SSC)</p>
-                <p>Islamee Adarsha High School(IAUB)</p>
-              </motion.div>
+              
             </div>
           </motion.div>
         </div>
