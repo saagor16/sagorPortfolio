@@ -5,9 +5,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaRegAddressCard,
-  FaLinkedin,
-  FaFacebook,
-  FaGithub,
+
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -82,17 +80,6 @@ const Contact = () => {
               >
                 <FaEnvelope className="text-cyan-500" />
                 <span>Email: saagor.16@gmail.com</span>
-              </a>
-            </div>
-            <div className="flex space-x-4 mt-4">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={30} className="text-cyan-500 hover:text-white transition duration-300" />
-              </a>
-              <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                <FaFacebook size={30} className="text-cyan-500 hover:text-white transition duration-300" />
-              </a>
-              <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                <FaGithub size={30} className="text-cyan-500 hover:text-white transition duration-300" />
               </a>
             </div>
           </div>
