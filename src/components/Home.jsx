@@ -28,7 +28,7 @@ const Home = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="text-gray-200 text-2xl md:text-5xl lg:text-7xl tracking-tight mb-4"
             >
-              HEY, I AM <br />
+              HEY,I AM <br />
               <span className="text-purple-500">Sagor</span>
             </motion.p>
             <TypeAnimation
@@ -55,7 +55,7 @@ const Home = () => {
                 duration={500}
                 className="group text-white w-fit px-4 py-2 md:px-6 md:py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-sm md:text-base"
               >
-                Portfolio
+              Portfolio
                 <span className="group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight
                     size={20}
