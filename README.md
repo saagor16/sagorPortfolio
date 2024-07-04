@@ -24,7 +24,6 @@ Explore the live site: [**Sagor Portfolio Live**](https://sagor-portfolio-two.ve
   - **react-icons**
   - **react-animated-cursor**
 - **Development Tools:** 
-  - **ESLint**
   - **TailwindCSS**
 
 ### Cloning Instructions
