@@ -65,10 +65,9 @@ const Home = () => {
                 </span>
               </Link>
               <a
-                href="https://drive.google.com/file/d/1KQuxYtJ2_-GH1wddnKp_XWG9DazEwbY0/view?usp=sharing"
+                href="https://drive.google.com/uc?export=download&id=1KQuxYtJ2_-GH1wddnKp_XWG9DazEwbY0"
                 target="_blank"
                 rel="noreferrer"
-                download={true}
                 className="group text-white w-fit px-4 py-2 md:px-6 md:py-3 my-2 flex items-center rounded-md hover:bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer border-2 border-black text-sm md:text-base"
               >
                 Resume
