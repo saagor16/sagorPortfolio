@@ -65,7 +65,7 @@ const Home = () => {
                 </span>
               </Link>
               <a
-                href="https://drive.google.com/uc?export=download&id=1zz40U8Ms3Uys_CXJTTEcaQerQ0XrpIhV"
+                href="https://drive.google.com/file/d/1KQuxYtJ2_-GH1wddnKp_XWG9DazEwbY0/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 download={true}
