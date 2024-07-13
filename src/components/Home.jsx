@@ -19,8 +19,6 @@ const Home = () => {
       <div className="md:pt-40 pt-28">
         <div className="max-w-screen-lg mx-auto flex flex-col lg:flex-row items-center justify-center h-full px-4">
           <div className="flex flex-col justify-center h-full text-center items-center lg:text-start lg:items-start">
-           
-
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -45,7 +43,10 @@ const Home = () => {
               className="font-bold text-gray-400 text-xl md:text-3xl lg:text-5xl italic mb-4"
             />
             <p className="text-white text-base md:text-lg lg:text-xl">
-            I am passionate about learning and mastering React to achieve <br /> success in my field, despite having no professional experience. <br /> My goal is to contribute effectively to projects and grow as a proficient developer.
+              I am passionate about learning and mastering React to achieve{" "}
+              <br /> success in my field, despite having no professional
+              experience. <br /> My goal is to contribute effectively to
+              projects and grow as a proficient developer.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 mt-4">
@@ -55,7 +56,7 @@ const Home = () => {
                 duration={500}
                 className="group text-white w-fit px-4 py-2 md:px-6 md:py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-sm md:text-base"
               >
-              Portfolio
+                Portfolio
                 <span className="group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight
                     size={20}
@@ -64,7 +65,7 @@ const Home = () => {
                 </span>
               </Link>
               <a
-                href="https://drive.google.com/file/d/1zz40U8Ms3Uys_CXJTTEcaQerQ0XrpIhV/view?usp=sharing"
+                href="https://drive.google.com/uc?export=download&id=1zz40U8Ms3Uys_CXJTTEcaQerQ0XrpIhV"
                 target="_blank"
                 rel="noreferrer"
                 download={true}
