@@ -33,6 +33,7 @@ const Navbar = () => {
       <div>
         <h1 className="text-5xl font-signature ml-2">Sagor</h1>
       </div>
+
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
