@@ -51,6 +51,17 @@ const Portfolio = () => {
       techs: ['React', 'JavaScript','Daisy UI','Tailwind CSS'],
       features: ['Responsive design', 'User Authentication','Private Routes'],
     },
+    {
+  id: 5,
+  src: bookStoreApp,
+  name: 'Book Store App',
+  description: 'A dynamic application designed for managing books, featuring user and admin dashboards, graphical stats, and a secure authentication system using Firebase. Built with React, Redux Toolkit, and Tailwind CSS for a responsive and interactive user experience.',
+  githubLink: 'https://github.com/saagor16/Book-Store-Frontend',
+  liveLink: 'https://book-store-app-ff563.web.app/',
+  techs: ['React', 'Redux Toolkit', 'Firebase', 'Tailwind CSS'],
+  features: ['User Dashboard for Orders and Cart', 'Admin Panel for Book Management', 'Graphical Stats Visualization', 'Responsive Design'],
+},
+
   ];
 
   const handlerControlModal = (index) => {
