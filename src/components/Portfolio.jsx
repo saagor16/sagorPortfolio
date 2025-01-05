@@ -5,6 +5,8 @@ import campusHub from '../assets/portfolio/CampusHub.png';
 import volunteer from '../assets/portfolio/volunteer.png';
 import art from '../assets/portfolio/art.png';
 import real from '../assets/portfolio/real.png';
+import bookStoreApp from '../assets/portfolio/bookStoreApp.png';
+
 
 const Portfolio = () => {
   const [modal, setModal] = useState(null);
@@ -13,6 +15,34 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      src: bookStoreApp,
+      name: 'Book Store App',
+      description: 'A dynamic application designed for managing books, featuring user and admin dashboards, graphical stats, and a secure authentication system using Firebase. Built with modern technologies for a seamless and interactive user experience.',
+      githubLink: 'https://github.com/saagor16/Book-Store-Frontend',
+      liveLink: 'https://book-store-app-ff563.web.app/',
+      techs: [
+        "React", 
+        "Redux Toolkit", 
+        "Firebase", 
+        "Tailwind CSS", 
+        "React Router DOM", 
+        "React Hook Form", 
+        "Chart.js", 
+        "Axios", 
+        "SweetAlert2"
+      ],
+      features: [
+        'User Dashboard for Orders and Cart', 
+        'Admin Panel for Book Management', 
+        'Graphical Stats Visualization', 
+        'Responsive Design',
+        'Secure Authentication',
+        'Order Management',
+        'Book Addition and Deletion'
+      ],
+    },    
+    {
+      id: 2,
       src: campusHub,
       name: 'CampusHub',
       description: 'A comprehensive platform featuring student login and registration, meal management for admins, and a review system, all built with a modern tech stack including MongoDB, Express.js, React.js, and Node.js. Secure payments are facilitated through Stripe integration.',
@@ -22,7 +52,7 @@ const Portfolio = () => {
       features: ['Student Login and Registration', 'Meal Management for Admins','Review and Rating System','Stripe Integration for Payments'],
     },
     {
-      id: 2,
+      id: 3,
       src: volunteer,
       name: 'Happy Volunteer',
       description: 'This project is a volunteer management website designed to streamline volunteer activities using modern web technologies. It facilitates user authentication, activity tracking, and communication between volunteers and organizers. The site is built with a responsive design to ensure accessibility across devices',
@@ -32,7 +62,7 @@ const Portfolio = () => {
       features: ['Responsive design', 'Document head management','Data management and storage facilitated','User authentication functionalities','Comprehensive volunteer management capabilities'],
     },
     {
-      id: 3,
+      id: 4,
       src: art,
       name: 'CruftyCreation',
       description: 'Art And Cruft is a web application designed to showcase and manage art and craft items. It provides a centralized platform for users to explore various craft collections and for creators to showcase their own crafts.',
@@ -42,7 +72,7 @@ const Portfolio = () => {
       features: ['Responsive design', 'User Authentication','Private Routes'],
     },
     {
-      id: 4,
+      id: 5,
       src: real,
       name: 'RealResort',
       description: 'The Real Estate Portal is a comprehensive web application designed for buying, selling, and renting real estate properties. It provides a seamless user experience with robust features for property seekers and owners alike.',
@@ -72,8 +102,8 @@ const Portfolio = () => {
               <img
                 src={project.src}
                 alt={project.name}
-                className="rounded-md duration-200 hover:scale-105"
-              />
+                className="rounded-md duration-200 hover:scale-105 w-full h-64 object-cover"
+                />
               <div className="flex flex-col md:flex-row items-center justify-center mt-4">
               <a
                   href={project.liveLink}
@@ -111,7 +141,7 @@ const Portfolio = () => {
                     <p className="text-center mb-4">{project.description}</p>
                     <div className="flex flex-wrap justify-center gap-2 mb-4">
                       {project.techs.map((tech, i) => (
-                        <p key={i} className="bg-gray-200 px-4 py-2 rounded">
+                        <p key={i} className="bg-gray-200 px-4 py-2 rounded hover:scale-100 duration-200 hover:font-bold">
                           {tech}
                         </p>
                       ))}
