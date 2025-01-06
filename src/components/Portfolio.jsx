@@ -197,33 +197,35 @@ const Portfolio = () => {
               {modal === i && (
                 <div
                   ref={modalRef}
-                  className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4"
+                  className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50"
                 >
-                  <div className="bg-white text-black rounded-lg p-6 relative w-full md:w-3/4 lg:w-1/2">
+                  <div className="bg-white text-black rounded-lg p-6 relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl h-[80vh] overflow-y-auto">
                     <FaTimes
-                      className="absolute top-2 right-2 text-xl cursor-pointer"
+                      className="absolute top-2 right-2 text-xl cursor-pointer hover:text-red-500 transition duration-200"
                       onClick={() => handlerControlModal(null)}
                     />
-                    <h3 className="text-center text-2xl font-bold mb-4">
+                    <h3 className="text-center text-xl sm:text-2xl font-bold mb-4">
                       {project.name}
                     </h3>
-                    <p className="text-center mb-4">{project.description}</p>
+                    <p className="text-center text-sm sm:text-base mb-4">
+                      {project.description}
+                    </p>
                     <div className="flex flex-wrap justify-center gap-2 mb-4">
                       {project.techs.map((tech, i) => (
                         <p
                           key={i}
-                          className="bg-gray-200 px-4 py-2 rounded hover:scale-100 duration-200 hover:font-bold"
+                          className="bg-gray-200 px-4 py-2 rounded text-sm hover:scale-105 duration-200 hover:font-bold"
                         >
                           {tech}
                         </p>
                       ))}
                     </div>
-                    <div className="flex justify-center gap-4 mb-4">
+                    <div className="flex justify-center flex-wrap gap-4 mb-4">
                       <a
                         href={project.githubLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="bg-gray-800 text-white px-4 py-2 rounded-md flex items-center gap-2"
+                        className="bg-gray-800 text-white px-4 py-2 rounded-md flex items-center gap-2 text-sm sm:text-base"
                       >
                         Github <FaGithub />
                       </a>
@@ -231,13 +233,15 @@ const Portfolio = () => {
                         href={project.liveLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="bg-gray-800 text-white px-4 py-2 rounded-md flex items-center gap-2"
+                        className="bg-gray-800 text-white px-4 py-2 rounded-md flex items-center gap-2 text-sm sm:text-base"
                       >
                         Live Demo <FaExternalLinkAlt />
                       </a>
                     </div>
-                    <p className="text-lg font-semibold mb-2">Features</p>
-                    <ul className="grid grid-cols-1 gap-2">
+                    <p className="text-lg font-semibold mb-2 text-center">
+                      Features
+                    </p>
+                    <ul className="grid grid-cols-1  gap-2 text-sm sm:text-base">
                       {project.features.map((feature, index) => (
                         <li key={index}>
                           <p>
