@@ -53,8 +53,8 @@ const Portfolio = () => {
       name: "Veggify Recipe App",
       description:
         "An engaging and responsive platform for recipe exploration with user authentication, newsletter subscriptions, and detailed recipe views. Built with modern technologies for a seamless user experience.",
-      githubLink: "https://github.com/saagor16/Veggify-Recipe-App", // Replace with the actual GitHub link
-      liveLink: "https://veggify-recipe-app.web.app/", // Replace with the actual live site link
+      githubLink: "https://github.com/saagor16/Veggify-Recipe-Fontend", 
+      liveLink: "https://veggify-recipe-fontend.vercel.app",
       techs: [
         "React.js",
         "Tailwind CSS",
