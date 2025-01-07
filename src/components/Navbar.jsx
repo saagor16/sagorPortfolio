@@ -40,12 +40,7 @@ const Navbar = () => {
             key={id}
             className="lg:px-10 md:px-5 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 relative inline-block pb-1 group"
           >
-            <Link
-              to={link}
-              smooth
-              duration={500}
-              activeClass="text-white"
-            >
+            <Link to={link} smooth duration={500} activeClass="text-white">
               {link}
             </Link>
             <span className="absolute bottom-0 left-0 right-0 mx-auto h-0.5 w-0 bg-white transition-all duration-300 ease-out group-hover:w-3/4"></span>
