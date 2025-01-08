@@ -1,4 +1,4 @@
-# 🚀 **Khan Portfolio**
+# 🚀 **Sagor Portfolio**
 
 ### 📜 **Project Overview**
 
